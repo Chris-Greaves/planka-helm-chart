@@ -1,0 +1,5 @@
+# Vscode files
+.vscode
+
+# Chart dependencies
+**/charts/*.tgz
