@@ -61,8 +61,8 @@ spec:
             - name: DATABASE_URL
               valueFrom:
                 secretKeyRef:
-                  name: planka-postgresql
-                  key: database-url
+                  name: planka-postgresql-svcbind-custom-user
+                  key: uri
             - name: BASE_URL
               {{- if .Values.ingress.enabled }}
               value: {{ printf "https://%s" (first .Values.ingress.hosts).host }}

@@ -89,11 +89,10 @@ postgresql:
   auth:
     database: planka
     username: planka
-    existingSecret: planka-postgresql
-    secretKeys:
-      adminPasswordKey: postgres-password
-      userPasswordKey: password
-      replicationPasswordKey: replication-password
+    password: ""
+    postgresPassword: ""
+    replicationPassword: ""
+    # existingSecret: planka-postgresql
 
 ## PVC-based data storage configuration
 persistence:
