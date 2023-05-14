@@ -67,10 +67,10 @@ spec:
               {{- if .Values.ingress.enabled }}
               value: {{ printf "https://%s" (first .Values.ingress.hosts).host }}
               {{- else }}
-              value: http://localhost:80
+              value: http://localhost:3000
               {{- end }}
             - name: SECRET_KEY
-              value: {{ required "A secret key needs to be generated using 'openssl rand -base64 45' and assigned to secretkey." .Values.secretkey }}
+              value: {{ required "A secret key needs to be generated using 'openssl rand -hex 64' and assigned to secretkey." .Values.secretkey }}
             - name: TRUST_PROXY
               value: "0"
       {{- with .Values.nodeSelector }}
