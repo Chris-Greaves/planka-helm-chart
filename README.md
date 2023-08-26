@@ -1,8 +1,13 @@
 # Planka Helm Chart
 
+
 [Planka](https://github.com/plankanban/planka) is an OSS alternative to Trello that you can host yourself, and this is a Helm Chart to make it easier to deploy to K8s.
 
 Shoutout to [this issue](https://github.com/plankanban/planka/issues/192) who have been asking for this Helm Chart.
+
+# ⚠️ Deprecation notice
+
+This chart has been moved into the official [Planka repo](https://github.com/plankanban/planka) (see path `/charts/planka`). I will still be supporting the chart over there so feel free to tag `@Chris-Greaves` on any Helm related issues or PRs. Thanks!
 
 ## Issues
 
